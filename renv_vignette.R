@@ -19,4 +19,11 @@ renv::init() # converts a project to use renv. Creates 3 new files:
 
 # Now that you’ve got the a high-level lay of the land, we’ll show a couple of specific workflows before discussing some of the reproducibility challenges that renv doesn’t currently help with.
 
+# Call a package:
+library(ggplot2)
+
+# Save current package in lockfile
+renv::snapshot()
+
+renv::update() # use to get the latest versions of all dependencies
 
